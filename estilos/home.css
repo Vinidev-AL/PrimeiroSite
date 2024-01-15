@@ -1,58 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
+    background-image: linear-gradient(45deg , purple, blue, yellow, green);
+    background-size: 500%;
+    background-repeat: no repeat;
     width: 100vw;
-    height: 100vh;
+    background-color: #eee;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    animation: fundoanim 5s infinite;
 }
 
+
+@keyframes fundoanim {
+    0% {background-position: left;}
+    50% {background-position: right;}
+    100% {background-position: left;}
+}
+
+
+
+#img_logo {
+    width: 50px;
+    height: 50px;
+}
 
 #header {
-    width: 700px;
+    width: 70%;
     height: 82px;
     display: flex;
-}
-
-#logo {
-    width: 180px;
-    height: 82px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#navegacao {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-}
-
-#navegacao ul {
-   
-    display: flex;
-    width: 100%;
     flex-direction: row;
-    justify-content: center;
+}
+
+#logotipo {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+   
     align-items: center;
-    text-align: center;
 
 }
 
-#navegacao ul li {
-    list-style: none;
-    height: 100%;
+nav {
     width: auto;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+nav ul {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    width: auto;
+    height: auto;
     margin-left: 10px;
     margin-right: 10px;
     text-decoration: none;
+    transition: 0s;
 }
 
-#navegacao ul li a {
-    font-size: 25px;
+nav ul li:active {
+    background-color: rgb(0, 89, 255);
+}
+
+nav ul li a {
     text-decoration: none;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
+#section {
+    background-color: transparent;
+    width: 70%;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+hr {
+    width: 70%;
+    background-color: black;
+}
+
+#section hr {
+    width: 100%;
+}
+
+#section p {
+    margin-bottom: 20px;
+}
+
+#section h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#section iframe {
+    margin-bottom: 20px;
+}
+
+#iframe_maps {
+    width: 300px;
+    height: 250px;
+}
+
+#footer {
+    background-color: #000000;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#footer p {
+    color: white;
+}
+.redes_sociais {
+    color: white;
+}
